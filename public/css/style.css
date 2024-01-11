@@ -123,3 +123,13 @@ body {
   height: 400px;
   width: 100vh;
 }
+/* Responsiveness on Map */
+@media (max-width: 1000px) {
+  .row {
+    margin: auto;
+  }
+  #map {
+    height: 200px;
+    width: 300px;
+  }
+}

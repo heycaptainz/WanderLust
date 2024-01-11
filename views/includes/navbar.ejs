@@ -18,6 +18,16 @@
     padding: 0.5rem 3rem 0.5rem 3rem;
     font-size: 0.9rem;
   }
+  /* Responsiveness */
+  @media (max-width: 1000px) {
+    .search-inp,
+    .search-btn {
+      display: none;
+    }
+    .navbar-collapse {
+      background-color: white;
+    }
+  }
 </style>
 
 <nav class="navbar navbar-expand-md border-bottom sticky-top">
@@ -35,7 +45,7 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav">
-        <a class="nav-link" href="/listings">Explore</a>
+        <a class="nav-link" href="/listings"><b>Explore</b></a>
       </div>
       <div class="navbar-nav ms-auto">
         <form class="d-flex" role="search">
@@ -52,8 +62,8 @@
       <div class="navbar-nav ms-auto">
         <a class="nav-link" href="/listings/new">Airbnb your home</a>
         <%if(!currUser){%>
-        <a class="nav-link" href="/signup"><b>Sign up</b></a>
         <a class="nav-link" href="/login"><b>Log in</b></a>
+        <a class="nav-link" href="/signup"><b>Sign up</b></a>
         <%}%> <%if(currUser){%>
         <a class="nav-link" href="/logout"><b>Log out</b></a>
         <%}%>
