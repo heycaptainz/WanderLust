@@ -94,6 +94,6 @@ app.use((err, req, res, next) => {
   res.status(statusCode).render("error.ejs", { message });
 });
 
-app.listen(4000, () => {
-  console.log("Server is running on port-4000");
+app.listen(8080, () => {
+  console.log("Server is running on port-8080");
 });
